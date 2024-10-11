@@ -1,0 +1,394 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #F72585; /*vibrant pink.*/
+/* #7209B7; /* a deep purple. */
+/*#3A0CA3; /*rich indigo*/
+/* #FCA311; /*yellow accent */
+/*Off-White: #F4F3EE; /* off-white */
+
+body {
+    font-family: 'Courier', serif;
+    background-color: #000000;
+    color: #d7c9e0; /* Light lavender */
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #7209B7; /*purple*/
+}
+
+h2 {
+    text-align: center; /* Center align the text */
+    font-size: 2.5rem; /* Increase font size */
+    margin: 3rem 0; /* Add spacing above and below */
+}
+
+a {
+    text-decoration: none;
+    color: #F72585; /*vibrant pink.*/
+
+}
+
+button {
+    font-family: inherit;
+}
+
+/* Header Styles */
+.site-header {
+    background-color: #7209B7; /* a deep purple. */
+    padding: 1rem 0;
+    position: fixed; /* Fixes the header to the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensures it appears above other content */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #F4F3EE; /* off-white */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FCA311; /*yellow accent */
+}
+
+/* Logo Color */
+.logo a {
+    color: #F4F3EE; /* off-white */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.logo a:hover{
+    color: #FCA311; /*yellow accent */
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(180deg, #F72585, #7209B7, #000000); /* Updated gradient */
+    padding: 0 2rem;
+    color: white;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: #E5E5E5; /* Soft text color */
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.hero-text h1 span {
+    color: #FCA311; /* Accent color for name */
+}
+
+.hero-text h2 {
+    font-size: 1.8rem;
+    color: #FCA311; /* Accent color */
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.icon-links {
+    display: flex; /* Flexbox for alignment */
+    justify-content: left; /* Center the icons */
+    margin-top: 1rem; /* Add space above the icons */
+}
+
+.icon {
+    font-size: 2rem; /* Icon size */
+    color: #FCA311; /* Icon color */
+    margin: 0 1rem; /* Space between icons */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.icon:hover {
+    color: #E5E5E5; /* Change color on hover */
+}
+
+/* Hero Image */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    border-radius: 20px;
+    border: 5px solid #FCA311;
+    width: 400px; /* Increase image width */
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 4rem 2rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skill-button {
+    background-color: transparent;
+    color:#F4F3EE; 
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.skill-button:hover {
+    background-color: #FCA311;
+}
+
+/* About Section */
+.about-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.about-section .emphasis {
+    font-weight: bold;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    color: #FCA311;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.typing-effect {
+    display: inline-block; /* Ensures the width change is effective */
+    overflow: hidden; /* Hides the overflow text */
+    white-space: nowrap; /* Keeps text on a single line */
+    border-right: 2px solid #FCA311; /* Cursor effect */
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite; /* Adjust duration and steps */
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent; /* Hidden caret */
+    }
+    50% {
+        border-color: #FCA311; /* Visible caret */
+    }
+}
+
+.about-section div {
+    margin-bottom: 20px;
+}
+
+/* Education Section */
+.education-section {
+    padding: 4rem 2rem;
+    text-align: center; 
+    background-color: #000000; 
+}
+
+.education-blocks {
+    display: flex; 
+    justify-content: space-between; /* Space out the two university sections */
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.education-item {
+    width: 48%; /* Each item takes up roughly half the width */
+    position: relative; /* Position relative for hover effect */
+}
+
+.education-item h3 {
+    color: #FCA311; 
+}
+
+.course-container {
+    display: flex; /* Use flex for layout */
+    flex-wrap: wrap; /* Allow the boxes to wrap to the next line */
+    gap: 20px; /* Space between the course boxes */
+    margin-top: 10px; /* Add space above course container */
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.education-item:hover .course-container {
+    opacity: 1; /* Make courses visible on hover */
+    animation: wiper-effect 0.5s forwards; /* Use a custom animation */
+}
+
+@keyframes wiper-effect {
+    0% {
+        transform: translateY(20px); /* Start position */
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        transform: translateY(0); /* End position */
+        opacity: 1; /* End visible */
+    }
+}
+
+.course-box {
+    flex: 1 1 calc(50% - 20px); /* Allow two boxes per row with gap */
+    background-color: #7209B7; 
+    color: #F4F3EE; 
+    padding: 1.5rem; 
+    border-radius: 10px; 
+    margin: 0; /* Remove margin to avoid layout issues */
+}
+
+/* Additional line height for better spacing */
+.degree,
+.minors,
+.course-container p {
+    line-height: 1.5; /* Increase line height for better spacing */
+}
+
+/* Experience Section */
+.experience-section {
+    padding: 4rem 2rem; /* Add padding around the section */
+}
+
+.experience-grid {
+    display: flex; /* Use flexbox for vertical stacking */
+    flex-direction: column; /* Stack items vertically */
+    gap: 2rem; /* Space between the boxes */
+    width: 100%; /* Make sure the grid takes the full width */
+}
+
+.experience-item {
+    background-color: #F4F3EE; /* off-white */
+    color:#7209B7; 
+    padding: 1.5rem; /* Add padding inside the box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    width: 100%; /* Make the item take the full width of the container */
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px) scale(1.02); /* Lift effect and slight scale on hover */
+    background-color: #E5E5E5; /* Change background color on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Darker shadow for more depth */
+}
+
+/* Additional styles for other elements */
+
+
+
+/* Projects Section */
+.coding-projects-section {
+    padding: 4rem 2rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columns */
+    gap: 2rem; /* Space between items */
+    max-width: 1200px; /* Optional: limit the width */
+    margin: 0 auto; /* Center the grid */
+}
+
+.project-item {
+    background-color: #000000; /* purple */
+    color: #F4F3EE;
+    font-style: bold;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center; /* Center text inside project items */
+}
+
+/* Header Styling */
+.coding-projects-section h3 {
+    background-color: #FCA311;
+    color: #F4F3EE; /* off-white */
+    padding: 0.5rem; /* Padding around the header */
+    border-radius: 8px 8px 0 0; /* Round top corners */
+    margin: 0; /* Remove margin to keep it flush with the top */
+}
+
+.project-item p {
+    padding: 1rem; /* Add padding for project descriptions */
+}
+
+/* Footer */
+footer {
+    background-color: #7209B7; 
+    color: #F4F3EE; /* off-white */
+    padding: 2rem;
+    text-align: center;
+}
+
+.site-footer .icon-links {
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center the icons */
+    margin-top: 1rem; /* Add space above the icons */
+}
+
+.icon {
+    font-size: 2rem; /* Icon size */
+    color: #FCA311; /* Icon color */
+    margin: 0 1rem; /* Space between icons */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.icon:hover {
+    color: #E5E5E5; /* Change color on hover */
+}
