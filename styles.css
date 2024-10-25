@@ -11,26 +11,34 @@
 /* #FCA311; /*yellow accent */
 /*Off-White: #F4F3EE; /* off-white */
 
+/* #F4FDFF; /*cool white.*/
+/* #A288E3; /*lavender*/
+/* #38023B; /*plum*/
+
 body {
-    font-family: 'Courier', serif;
-    background-color: #000000;
-    color: #d7c9e0; /* Light lavender */
+    font-family: 'League Spartan', serif;
+    background-color: #000000; /*black*/
+    color: #F4FDFF; /*cool white.*/
     line-height: 1.6;
+}
+.main {
+    margin-left: 3.0rem;       /* Adds space on the left */
+    margin-right: 3.0rem;
 }
 
 h1, h2, h3 {
-    color: #7209B7; /*purple*/
+    color: #A288E3; /*lavender*/
 }
 
 h2 {
     text-align: center; /* Center align the text */
-    font-size: 2.5rem; /* Increase font size */
-    margin: 3rem 0; /* Add spacing above and below */
+    font-size: 3.0rem; /* Increase font size */
+    margin: 5rem 0; /* Add spacing above and below */
 }
 
 a {
     text-decoration: none;
-    color: #F72585; /*vibrant pink.*/
+    color: #A288E3; /*lavender*/
 
 }
 
@@ -40,7 +48,7 @@ button {
 
 /* Header Styles */
 .site-header {
-    background-color: #7209B7; /* a deep purple. */
+    background-color: #A288E3; /*lavender*/
     padding: 1rem 0;
     position: fixed; /* Fixes the header to the top */
     width: 100%; /* Full width */
@@ -63,24 +71,24 @@ button {
 }
 
 .nav-links a {
-    color: #F4F3EE; /* off-white */
+    color: #38023B; /*plum*/
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #FCA311; /*yellow accent */
+    color: #F4FDFF; /*cool white.*/
 }
 
 /* Logo Color */
 .logo a {
-    color: #F4F3EE; /* off-white */
+    color: #38023B; /*plum*/
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .logo a:hover{
-    color: #FCA311; /*yellow accent */
+    color: #F4FDFF; /*cool white.*/
 }
 
 /* Hero Section */
@@ -89,7 +97,7 @@ button {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(180deg, #F72585, #7209B7, #000000); /* Updated gradient */
+    background: linear-gradient(180deg, #A288E3 /*lavender*/, #38023B, #000000 /*black*/); 
     padding: 0 2rem;
     color: white;
 }
@@ -109,13 +117,14 @@ button {
 
 .hero-text p {
     font-size: 1.2rem;
-    color: #E5E5E5; /* Soft text color */
+    color: #F4FDFF /*cool white.*/
 }
 
 .hero-text h1 {
     font-size: 3.5rem;
-    color: white;
+    color: #F4FDFF; /*cool white.*/
     margin-bottom: 1rem;
+    text-align: left;
 }
 
 .hero-text h1 span {
@@ -126,6 +135,7 @@ button {
     font-size: 1.8rem;
     color: #FCA311; /* Accent color */
     margin-bottom: 2rem;
+    text-align: left;
 }
 
 .hero-buttons {
@@ -147,7 +157,7 @@ button {
 }
 
 .icon:hover {
-    color: #E5E5E5; /* Change color on hover */
+    color: #F4FDFF /*cool white.*/
 }
 
 /* Hero Image */
@@ -160,7 +170,7 @@ button {
 
 .hero-image img {
     border-radius: 20px;
-    border: 5px solid #FCA311;
+    border: 5px solid #F4FDFF; /*cool white.*/
     width: 400px; /* Increase image width */
     height: auto;
     object-fit: cover;
@@ -169,7 +179,10 @@ button {
 
 /* Skills Section */
 .skills-section {
-    padding: 4rem 2rem;
+    padding: 4rem 4rem;
+    margin-bottom: 4rem;
+    margin-left: 3.0rem;
+    margin-right: 3.0rem;
 }
 
 .skills-container {
@@ -181,7 +194,7 @@ button {
 
 .skill-button {
     background-color: transparent;
-    color:#F4F3EE; 
+    color:#F4FDFF; /*cool white.*/ 
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 20px;
@@ -189,20 +202,22 @@ button {
 }
 
 .skill-button:hover {
-    background-color: #FCA311;
+    background-color: #A288E3 /*lavender*/
 }
 
 /* About Section */
 .about-section {
-    padding: 4rem 2rem;
-    text-align: center;
+    padding: 4rem 4rem;
+    text-align: left;
+    margin-left: 3.0rem !important;
+    margin-right: 3.0rem !important;
 }
 
 .about-section .emphasis {
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     margin-top: 2rem;
-    color: #FCA311;
+    color: #F4FDFF; /*cool white.*/ 
 }
 
 @keyframes typing {
@@ -218,7 +233,7 @@ button {
     display: inline-block; /* Ensures the width change is effective */
     overflow: hidden; /* Hides the overflow text */
     white-space: nowrap; /* Keeps text on a single line */
-    border-right: 2px solid #FCA311; /* Cursor effect */
+    border-right: 2px solid #F4FDFF; /*cool white.*/ 
     animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite; /* Adjust duration and steps */
 }
 
@@ -227,7 +242,7 @@ button {
         border-color: transparent; /* Hidden caret */
     }
     50% {
-        border-color: #FCA311; /* Visible caret */
+        border-color: #F4FDFF; /*cool white.*/  /* Visible caret */
     }
 }
 
@@ -237,31 +252,32 @@ button {
 
 /* Education Section */
 .education-section {
-    padding: 4rem 2rem;
-    text-align: center; 
+    padding: 4rem 4rem;
+    text-align: left; 
     background-color: #000000; 
+    margin-top: 4rem;
 }
 
 .education-blocks {
-    display: flex; 
-    justify-content: space-between; /* Space out the two university sections */
+    display: block; 
     max-width: 1200px; 
     margin: 0 auto; 
 }
 
 .education-item {
-    width: 48%; /* Each item takes up roughly half the width */
+    width: 100%; /* Each item takes up roughly half the width */
+    margin-bottom: 2rem;
     position: relative; /* Position relative for hover effect */
 }
 
 .education-item h3 {
-    color: #FCA311; 
+    color: #A288E3 /*lavender*/
 }
 
 .course-container {
     display: flex; /* Use flex for layout */
     flex-wrap: wrap; /* Allow the boxes to wrap to the next line */
-    gap: 20px; /* Space between the course boxes */
+    gap: 10px; /* Space between the course boxes */
     margin-top: 10px; /* Add space above course container */
     opacity: 0; /* Start invisible */
     transition: opacity 0.3s ease; /* Smooth transition for opacity */
@@ -284,9 +300,9 @@ button {
 }
 
 .course-box {
-    flex: 1 1 calc(50% - 20px); /* Allow two boxes per row with gap */
-    background-color: #7209B7; 
-    color: #F4F3EE; 
+    flex: 1 1 200px; /* Allow two boxes per row with gap */
+    background-color: #A288E3; /*lavender*/
+    color: #F4FDFF; /*cool white.*/ 
     padding: 1.5rem; 
     border-radius: 10px; 
     margin: 0; /* Remove margin to avoid layout issues */
@@ -312,8 +328,8 @@ button {
 }
 
 .experience-item {
-    background-color: #F4F3EE; /* off-white */
-    color:#7209B7; 
+    background-color: #000000; /* black */
+    color:#F4FDFF; /*cool white.*/ 
     padding: 1.5rem; /* Add padding inside the box */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -321,12 +337,19 @@ button {
     width: 100%; /* Make the item take the full width of the container */
     margin-bottom: 2rem;
     margin-top: 2rem;
+    text-align: left;
 }
 
 .experience-item:hover {
     transform: translateY(-5px) scale(1.02); /* Lift effect and slight scale on hover */
-    background-color: #E5E5E5; /* Change background color on hover */
+    background-color: #38023B; /*plum*/  /* Change background color on hover */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Darker shadow for more depth */
+}
+
+.experience-item p.description{
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    font-style: italic;
 }
 
 /* Additional styles for other elements */
@@ -339,26 +362,25 @@ button {
 }
 
 .projects-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 3 columns */
+    display: block;
+    grid-template-columns: repeat(1, 1fr); /* 3 columns */
     gap: 2rem; /* Space between items */
-    max-width: 1200px; /* Optional: limit the width */
     margin: 0 auto; /* Center the grid */
 }
 
 .project-item {
-    background-color: #000000; /* purple */
-    color: #F4F3EE;
+    background-color: #000000; /* black */
+    color: #F4FDFF; /*cool white.*/ 
     font-style: bold;
     padding: 1.5rem;
     border-radius: 10px;
-    text-align: center; /* Center text inside project items */
+    text-align: left; /* Center text inside project items */
 }
 
 /* Header Styling */
 .coding-projects-section h3 {
-    background-color: #FCA311;
-    color: #F4F3EE; /* off-white */
+    background-color: #A288E3; /*lavender*/
+    color: #F4FDFF; /*cool white.*/ 
     padding: 0.5rem; /* Padding around the header */
     border-radius: 8px 8px 0 0; /* Round top corners */
     margin: 0; /* Remove margin to keep it flush with the top */
@@ -370,8 +392,8 @@ button {
 
 /* Footer */
 footer {
-    background-color: #7209B7; 
-    color: #F4F3EE; /* off-white */
+    background-color: #38023B; /*plum*/
+    color: #F4FDFF; /*cool white.*/ 
     padding: 2rem;
     text-align: center;
 }
@@ -390,5 +412,5 @@ footer {
 }
 
 .icon:hover {
-    color: #E5E5E5; /* Change color on hover */
+    color: #F4FDFF; /*cool white.*/ 
 }
