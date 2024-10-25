@@ -10,7 +10,8 @@
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+    <link href="https://fonts.googleapis.com/css?family=League+Spartan" rel="stylesheet">
+
 </head>
 <body>
 
@@ -22,10 +23,10 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#education">Education and Experience</a></li>
+                <li><a href="#education">Experience</a></li>
                 <li><a href="#coding">Projects</a></li>
-                <li><a href="https://docs.google.com/document/d/1rwS8f72hL_btGB3WKLBbKkA-PyDnb5D7CmrKSPfxa-4/edit?usp=sharing" target="_blank">Resume</a></li> <!-- Link to your resume -->
-                <li><a href="mailto:shreepatel527@gmail.com" class="email-button">Email Me</a></li> <!-- Email button -->
+                <li><a href="https://drive.google.com/file/d/1g48aMHl3I8ySWuHMSdxMEJGfLf7oRHkU/view?usp=sharing" target="_blank">Resume</a></li> <!-- Link to resume -->
+                <li><a href="mailto:shreepatel527@gmail.com" class="email-button">Contact</a></li> <!-- Email button -->
             </ul>
         </nav>
     </header>
@@ -49,16 +50,18 @@
     </div>
 </section>
 
+<div class = "main">
 
     <!-- About Section -->
     <section id="about" class="about-section" data-aos="fade-in">
         <h2>About Me</h2>
         <div class = "emphasis" id = "typing-text">I'm a chemist who loves coding.</div>
-        <div>The world needs more energy, more medicine, more materials, more science-- and I hope that my coding skills can speed up scientific discovery 
+        <div>The world needs more energy, more medicine, more materials, more science. I hope that my coding skills can speed up scientific discovery 
             and help solve some of these complex issues. I have a diverse background in chemistry, coding, writing, materials, biophysics, 3D modeling, and so much more.</div> 
+        <div>I am proficient in Python, C++, SQL, Bash Scripting, and R. My background combines scientific research and software engineering, 
+            and I am passionate about improving chemistry through technology, computational power, and automation. I have a Bachelor’s degree in Chemistry 
+            from Carnegie Mellon and am currently pursuing a Master’s in Molecular Science and Software Engineering at UC Berkeley.</div>
         <div>When I am not at the computer, I like to write poetry, knit, take on new projects, and binge watch Star Wars.</div>
-        <div>Currently. I am a Master's student
-            at UC Berkeley, where I am currently studying Molecular Science and Software Engineering.</div>
         <div style="font-weight: bold;">I am looking for my next full-time role!</div>
 
         
@@ -82,13 +85,15 @@
             <button class="skill-button">HTML</button> 
             <button class="skill-button">CSS</button> 
             <button class="skill-button">PyTorch</button> 
+            <button class="skill-button">TensorFlow</button> 
             <button class="skill-button">Bayesian Models</button> 
             <button class="skill-button">Natural Language Processing</button> 
+            <button class="skill-button">Computer Vision</button> 
             <button class="skill-button">Regression Analysis</button> 
             <button class="skill-button">Principal Component Analysis</button> 
             <button class="skill-button">Data Cleaning</button> 
             <button class="skill-button">Gradient Descent</button> 
-            <button class="skill-button">Artificial Neural Networks</button> 
+            <button class="skill-button">Neural Networks</button> 
             <button class="skill-button">RESTful APIs</button> 
             <button class="skill-button">Object-Oriented Programming</button> 
             <button class="skill-button">Git</button> 
@@ -140,7 +145,7 @@
 
             <div class="education-item" id="cmu">
                 <h3>Carnegie Mellon University</h3>
-                <p class="degree">Bachelor of Science in Chemistry</p>
+                <p class="degree">Bachelor of Science in Chemistry with University and College Honors</p>
                 <p class="minors">Minors: Creative Writing and Engineering Studies</p>
                 <p class="date">Graduated: May 2023</p>
                 <div class="description">
@@ -190,11 +195,15 @@
                     <h4>Emerald Cloud Lab</h4>
                     <p class="date">June 2023 - June 2024</p>
                     <p class="description">
-                        In this role, I was responsible for designing, building, and deploying solutions to laboratory workflow problems. 
-                        I led the design and deployment of a customized magnetic tube rack system, reducing dead volume and improving lab efficiency. 
-                        By iterating on its ergonomic design, I cut material resource usage by 25% and optimized space utilization. 
-                        I reengineered the experiment database on AWS to streamline data handling and reprioritize operator tasks. 
-                        By leading a team of eight temporary workers, I accelerated a sensor array project by 15%.
+                        In this role, I was responsible for designing, building, and deploying solutions to automate laboratory workflow
+                        <ul>
+                            <li>Led the design and deployment of customized magnetic tube rack system to minimize dead volume and improve lab efficiency</li>
+                            <li>Cut material resource usage by 25% by iterating on magnetic rack to enhance ergonomic design and space utilization</li>
+                            <li>Reengineered experiment database on AWS to streamline magnetic rack data handling and change operator task prioritization</li>
+                            <li>Designed and installed customized IR temperature sensor holders to standardize positioning and data collection</li>
+                            <li>Led a team of 8 temporary workers to assemble and integrate various sensor arrays, accelerating speed on build out by 15%</li>
+                            <li>Updated deprecated solvent bottle location objects using Wolfram Mathematica to increase speed for storage tasks by 10%</li>
+                        </ul>
                     </p>
                 </div>
                 
@@ -203,11 +212,20 @@
                     <h4>Kurnikova Group (CMU)</h4>
                     <p class="date">March 2022 - September 2023</p>
                     <p class="description">
-                        I scripted restraint selection algorithms to improve the precision of protein-ligand binding simulations and 
-                        analyzed the electrostatic potential of the WD40 domain of LRRK2, identifying four target regions for future 
-                        drug development. Additionally, I developed a high-throughput optimization algorithm that reduced computational 
-                        resources for binding free energy simulations by up to 85% and simulated complex alchemical thermodynamic 
-                        cycles for RBFE/ABFE calculations on T4 lysozyme.
+                        I co-authored a paper detailing a machine learning workflow to reduce computational costs for protein-ligand binding by 85%
+                        <ul>
+                            <li>Simulated complex alchemical thermodynamic cycles with molecular dynamics for RBFE / ABFE calculations on T4 lysozyme</li>
+                            <li>Scripted selection algorithms in Python to implement machine learning ligand orientation predictions for binding simulations</li>
+                            <li>Analyzed the electrostatic potential of the WD40 domain of LRRK2, identifying 4 target regions for future drug development</li>
+                            <li>Developed force field parameters for ligands using GAFF2 and derived atomic charges via the RESP method with Gaussian</li>
+                            <li>Utilized GPU clusters to perform high performance computing for expensive protein-ligand simulations</li>
+                        </ul>
+                    </p>
+                    <p class="description">
+                        Awards:
+                        <ul>
+                            <li>1st Place Capstone Presentation -- highest score in the last 5 years</li>
+                        </ul>
                     </p>
                 </div>
 
@@ -216,15 +234,55 @@
                     <h4>Merck & Co.</h4>
                     <p class="date">May 2022 - August 2022</p>
                     <p class="description">
-                        I integrated a Bayesian model with experimental design to double the speed of stability assessments and 
-                        tablet degradation forecasts. I also developed Mass Spectrometry and High Pressure Liquid Chromatography 
-                        protocols to quantify trace degradation byproducts. In addition, I designed a tablet stability experiment 
-                        across varying temperature and humidity conditions, using a Bayesian machine learning model to accelerate 
-                        data collection for high-throughput experiments. This work reduced analytical data collection time by 50% 
-                        and culminated in a presentation at the company's annual conference.
+                        I used statistical and analytical techniques to double the speed of tablet stability assessments
+                        <ul>
+                            <li>Designed tablet stability experiment across temperature and humidity conditions to collect high-quality degradation data</li>
+                            <li>Conducted stability testing with analytical chemistry techniques and solution preparation methods with LC-MS</li>
+                            <li>Modeled laboratory data with Ridge and Lasso linear regressions using RMSE in R to assess the accuracy of detection protocol</li>
+                            <li>Developed Bayesian machine learning model to double the speed of stability assessments and degradation forecasts</li>
+                        </ul> 
                     </p>
                 </div>
-                <!-- add more experiences here ! -->
+                <div class="experience-item" data-aos="fade-in">
+                    <h3>Undergraduate Research Assistant</h3>
+                    <h4>Jin Laboratory</h4>
+                    <p class="date">Dec 2020 - August 2022</p>
+                    <p class="description">
+                        I designed synthetic pathways for novel small thiolated gold nanoclusters 
+                        <ul>
+                            <li>Utilized UV-Visible Spectroscopy and Photoluminescence Spectroscopy to analyze properties related to electronic structure</li>
+                            <li>Conducted experiments with techniques like aqueous-organic separation, ligand exchange, and thiol etching</li>
+                            <li>Probed vibrational levels in nanoparticle metallic core with THz Raman Spectroscopy and cryo-optical methods </li>
+                        </ul> 
+                    </p>
+                    <p class="description">
+                        Awards:
+                        <ul>
+                            <li>1st Place in Chemistry -- CMU Sigma Xi Quantitative Research Competition</li>
+                            <li>2nd Place Overall -- CMU Sigma Xi Quantitative Research Competition</li>
+                        </ul>
+                    </p>
+                    <p class="description">
+                        Poster Presentations:
+                        <ul>
+                            <li>Synthesis and Characterization of Thiolate-Protected Gold Nanoclusters of Atomic Precision</li> 
+                            <li>Presented at: ACS Fall 2022, ACS Regional Symposium Spring 2021 and CMU Meeting of the Minds</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="experience-item" data-aos="fade-in">
+                    <h3>Technical Operations Chemistry Intern</h3>
+                    <h4>Merck & Co.</h4>
+                    <p class="date">May 2021 - August 2021</p>
+                    <p class="description">
+                        I employed my chemical expertise to resolve antibiotic manufacturing process deviations
+                        <ul>
+                            <li>Conducted 50+ flow experiments on column chromatography set-up to confirm raw material functionality</li>
+                            <li>Documented experimental results in GMP format to support process change requests for raw materials specifications</li>
+                            <li>Performed weekly safety inspections, housekeeping walkthroughs, and flow tests on safety equipment</li>
+                        </ul> 
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -241,6 +299,14 @@
                         affected by natural disasters. I will implement Sobel edge filtering and 
                         machine learning models to classify images from various disasters, including midwest flooding and 
                         SoCal fires, and Hurricane Matthew.</p>
+                    <p class ="description"> Tech Stack / Techniques:</p>
+                    <button class="skill-button">Python</button>
+                    <button class="skill-button">Pandas</button>
+                    <button class="skill-button">Matplotlib</button>
+                    <button class="skill-button">Seaborn</button>
+                    <button class="skill-button">Exploratory Data Analysis</button>
+                    <button class="skill-button">Principal Component Analysis</button>
+                    <button class="skill-button">scikit-learn</button>
                 </div>
                 
                 <div class="project-item">
@@ -250,6 +316,31 @@
                         properties. The platform will 
                         integrate machine learning algorithms to predict molecular behavior and properties and an API for data 
                         storage and retrieval.</p>
+                    <p class ="description"> Tech Stack / Techniques:</p>
+                    <button class="skill-button">Python</button>
+                    <button class="skill-button">C++</button>
+                    <button class="skill-button">Data Structures</button>
+                    <button class="skill-button">RESTful API's</button>
+                    <button class="skill-button">Class Design and Architecture</button>
+                    <button class="skill-button">Software Development Life Cycle</button>
+                </div>
+
+                <div class="project-item">
+                    <h3>*Current* Protein Category Predictions from Structural Features</h3>
+                    <p class="description">I am developing an automated workflow for categorizing proteins by their structural features.
+                        I am preparing and cleaning FASTA files pulled from UniProt for use with Alphafold for 3D structure generation, and I am then running
+                        structural analysis of a variety of features to feed into a neural network.
+                    </p>
+                    <p class ="description"> Tech Stack / Techniques:</p>
+                    <button class="skill-button">Python</button>
+                    <button class="skill-button">Bash Scripting</button>
+                    <button class="skill-button">PyMOL</button>
+                    <button class="skill-button">RDKit</button>
+                    <button class="skill-button">TensorFlow</button>
+                    <button class="skill-button">FASTA Files</button>
+                    <button class="skill-button">RESTful API's</button>
+                    <button class="skill-button">Neural Networks</button>
+                    
                 </div>
                 
                 <div class="project-item">
@@ -259,6 +350,17 @@
                         ligands as well. I also processed the data and helped guide the development of our automation framework. 
                         We submitted a manuscript detailing the automated framework. Our resource allocation algorithm saved up to 85% of
                         computational cost for high-throughput protein-ligand binding free energy simulations.</p>
+                        <p class ="description"> Tech Stack / Techniques:</p>
+                        <button class="skill-button">Python</button>
+                        <button class="skill-button">Bash Scripting</button>
+                        <button class="skill-button">PyMOL</button>
+                        <button class="skill-button">RDKit</button>
+                        <button class="skill-button">Gaussian</button>
+                        <button class="skill-button">AMBER</button>
+                        <button class="skill-button">RBFE</button>
+                        <button class="skill-button">ABFE</button>
+                        <button class="skill-button">GPU Clusters</button>
+                        <button class="skill-button">HPC</button>
                 </div>
 
                 <div class="project-item">
@@ -269,6 +371,16 @@
                         study using this approach. With my model, I 
                         accurately predicted degradation patterns for up to two years with just three months of data, 
                         cutting the previous requirement of six months in half. </p>
+                        <p class ="description"> Tech Stack / Techniques:</p>
+                        <button class="skill-button">Python</button>
+                        <button class="skill-button">R Studio</button>
+                        <button class="skill-button">ELN</button>
+                        <button class="skill-button">LIMS</button>
+                        <button class="skill-button">MiniTab</button>
+                        <button class="skill-button">ggplot2</button>
+                        <button class="skill-button">Ridge and Lasso Regression</button>
+                        <button class="skill-button">glmnet</button>
+                        <button class="skill-button">Microsoft Excel</button>
                 </div>
         
                 <div class="project-item">
@@ -281,19 +393,17 @@
                         applying elastic net regressions to enhance model accuracy by incorporating penalty terms 
                         for coefficients. 
                     </p>
-                </div>
-                
-                <div class="project-item">
-                    <h3>Electronic Properties of Atomically Precise Thiol-Functionalized Gold Nanoclusters</h3>
-                    <p class="description">I used UV-Vis and photoluminescence (PL) spectroscopy to analyze the electronic 
-                        structures of Au23 and Au24. The UV-Vis spectra indicate a HOMO-LUMO gap for Au23 at around 580 nm and 
-                        emission at 820 nm, with excitation occurring at 380 nm, revealing significant influence from surface 
-                        ligands. For Au24, the HOMO-LUMO gap is at approximately 520 nm, with PL emission excited at 
-                        400 nm.</p>
+                    <p class ="description"> Tech Stack / Techniques:</p>
+                        <button class="skill-button">R Studio</button>
+                        <button class="skill-button">ggplot2</button>
+                        <button class="skill-button">Ridge and Lasso Regression</button>
+                        <button class="skill-button">glmnet</button>
+                        <button class="skill-button">Exploratory Data Analysis</button>
+                        <button class="skill-button">Random Forest Regression</button>
                 </div>
             </div>
         </section>
-
+</div>
     <!-- Footer -->
     <footer class="site-footer">
         <div class="icon-links">
