@@ -361,6 +361,12 @@ button {
     padding: 4rem 2rem;
 }
 
+.coding-projects-section p.subheader {
+    color: #F4FDFF; /*cool white.*/ 
+    text-align: center;
+    margin: 2rem; 
+}
+
 .projects-container {
     display: block;
     grid-template-columns: repeat(1, 1fr); /* 3 columns */
@@ -380,10 +386,24 @@ button {
 /* Header Styling */
 .coding-projects-section h3 {
     background-color: #A288E3; /*lavender*/
-    color: #F4FDFF; /*cool white.*/ 
+    color:  #38023B; /*plum*/
     padding: 0.5rem; /* Padding around the header */
-    border-radius: 8px 8px 0 0; /* Round top corners */
+    border-radius: 8px 8px 8px 8px; /* Round corners */
     margin: 0; /* Remove margin to keep it flush with the top */
+}
+
+.coding-projects-section a {
+    color: #38023B; /*plum*/
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.coding-projects-section a:hover {
+    color: #F4FDFF; /*cool white.*/
+}
+
+.project-item {
+    padding: 2.2rem; /* Add padding between projects */
 }
 
 .project-item p {
